@@ -1,5 +1,4 @@
-Assignment V:
-Top Places
+Assignment V: Top Places
 ===========
 Objective
 ----------
