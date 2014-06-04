@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		909AC644193E90EE00F57809 /* FlickPhotoForPlaceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 909AC643193E90EE00F57809 /* FlickPhotoForPlaceTVC.m */; };
 		90DB18EB193A30D20038A677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EA193A30D20038A677 /* Foundation.framework */; };
 		90DB18ED193A30D20038A677 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EC193A30D20038A677 /* CoreGraphics.framework */; };
 		90DB18EF193A30D20038A677 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EE193A30D20038A677 /* UIKit.framework */; };
@@ -22,6 +23,10 @@
 		90DB190F193A30D20038A677 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EE193A30D20038A677 /* UIKit.framework */; };
 		90DB1917193A30D20038A677 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90DB1915193A30D20038A677 /* InfoPlist.strings */; };
 		90DB1919193A30D20038A677 /* TopPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1918193A30D20038A677 /* TopPlaceTests.m */; };
+		90DB1927193A34A30038A677 /* FlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1926193A34A30038A677 /* FlickerPhotosTVC.m */; };
+		90DB192A193A35400038A677 /* TopPlaceFlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1929193A35400038A677 /* TopPlaceFlickerPhotosTVC.m */; };
+		90DB192F193A364B0038A677 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB192E193A364B0038A677 /* FlickrFetcher.m */; };
+		90DB1932193A3EA70038A677 /* FlickerPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1931193A3EA70038A677 /* FlickerPlacesTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		909AC642193E90EE00F57809 /* FlickPhotoForPlaceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickPhotoForPlaceTVC.h; path = ../FlickPhotoForPlaceTVC.h; sourceTree = "<group>"; };
+		909AC643193E90EE00F57809 /* FlickPhotoForPlaceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickPhotoForPlaceTVC.m; path = ../FlickPhotoForPlaceTVC.m; sourceTree = "<group>"; };
 		90DB18E7193A30D20038A677 /* TopPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DB18EA193A30D20038A677 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90DB18EC193A30D20038A677 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +62,15 @@
 		90DB1914193A30D20038A677 /* TopPlaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopPlaceTests-Info.plist"; sourceTree = "<group>"; };
 		90DB1916193A30D20038A677 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		90DB1918193A30D20038A677 /* TopPlaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopPlaceTests.m; sourceTree = "<group>"; };
+		90DB1925193A34A30038A677 /* FlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickerPhotosTVC.h; sourceTree = "<group>"; };
+		90DB1926193A34A30038A677 /* FlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickerPhotosTVC.m; sourceTree = "<group>"; };
+		90DB1928193A35400038A677 /* TopPlaceFlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlaceFlickerPhotosTVC.h; sourceTree = "<group>"; };
+		90DB1929193A35400038A677 /* TopPlaceFlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlaceFlickerPhotosTVC.m; sourceTree = "<group>"; };
+		90DB192C193A364B0038A677 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		90DB192D193A364B0038A677 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		90DB192E193A364B0038A677 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		90DB1930193A3EA70038A677 /* FlickerPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickerPlacesTVC.h; sourceTree = "<group>"; };
+		90DB1931193A3EA70038A677 /* FlickerPlacesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickerPlacesTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +130,17 @@
 		90DB18F0193A30D20038A677 /* TopPlace */ = {
 			isa = PBXGroup;
 			children = (
-				90DB18F9193A30D20038A677 /* TopPlaceAppDelegate.h */,
-				90DB18FA193A30D20038A677 /* TopPlaceAppDelegate.m */,
+				90DB192B193A364B0038A677 /* Flickr Fetcher */,
 				90DB18FC193A30D20038A677 /* Main_iPhone.storyboard */,
 				90DB18FF193A30D20038A677 /* Main_iPad.storyboard */,
+				909AC642193E90EE00F57809 /* FlickPhotoForPlaceTVC.h */,
+				909AC643193E90EE00F57809 /* FlickPhotoForPlaceTVC.m */,
+				90DB1928193A35400038A677 /* TopPlaceFlickerPhotosTVC.h */,
+				90DB1929193A35400038A677 /* TopPlaceFlickerPhotosTVC.m */,
+				90DB1930193A3EA70038A677 /* FlickerPlacesTVC.h */,
+				90DB1931193A3EA70038A677 /* FlickerPlacesTVC.m */,
+				90DB1925193A34A30038A677 /* FlickerPhotosTVC.h */,
+				90DB1926193A34A30038A677 /* FlickerPhotosTVC.m */,
 				90DB1902193A30D20038A677 /* TopPlaceViewController.h */,
 				90DB1903193A30D20038A677 /* TopPlaceViewController.m */,
 				90DB1905193A30D20038A677 /* Images.xcassets */,
@@ -129,6 +152,8 @@
 		90DB18F1193A30D20038A677 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90DB18F9193A30D20038A677 /* TopPlaceAppDelegate.h */,
+				90DB18FA193A30D20038A677 /* TopPlaceAppDelegate.m */,
 				90DB18F2193A30D20038A677 /* TopPlace-Info.plist */,
 				90DB18F3193A30D20038A677 /* InfoPlist.strings */,
 				90DB18F6193A30D20038A677 /* main.m */,
@@ -153,6 +178,16 @@
 				90DB1915193A30D20038A677 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90DB192B193A364B0038A677 /* Flickr Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				90DB192C193A364B0038A677 /* FlickrAPIKey.h */,
+				90DB192D193A364B0038A677 /* FlickrFetcher.h */,
+				90DB192E193A364B0038A677 /* FlickrFetcher.m */,
+			);
+			path = "Flickr Fetcher";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DB1932193A3EA70038A677 /* FlickerPlacesTVC.m in Sources */,
 				90DB1904193A30D20038A677 /* TopPlaceViewController.m in Sources */,
 				90DB18FB193A30D20038A677 /* TopPlaceAppDelegate.m in Sources */,
 				90DB18F7193A30D20038A677 /* main.m in Sources */,
+				90DB1927193A34A30038A677 /* FlickerPhotosTVC.m in Sources */,
+				90DB192F193A364B0038A677 /* FlickrFetcher.m in Sources */,
+				909AC644193E90EE00F57809 /* FlickPhotoForPlaceTVC.m in Sources */,
+				90DB192A193A35400038A677 /* TopPlaceFlickerPhotosTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +511,7 @@
 				90DB191E193A30D20038A677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90DB191F193A30D20038A677 /* Build configuration list for PBXNativeTarget "TopPlaceTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +520,7 @@
 				90DB1921193A30D20038A677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
