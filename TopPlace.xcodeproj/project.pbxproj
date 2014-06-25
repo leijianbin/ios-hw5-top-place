@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		909AC644193E90EE00F57809 /* FlickPhotoForPlaceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 909AC643193E90EE00F57809 /* FlickPhotoForPlaceTVC.m */; };
-		909AC64D193EAD2800F57809 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909AC64C193EAD2800F57809 /* ImageViewController.m */; };
-		909D283E194BCD7B008A334D /* RecentPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 909D283D194BCD7B008A334D /* RecentPhotos.m */; };
-		909D2841194CAC85008A334D /* RecentFlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 909D2840194CAC85008A334D /* RecentFlickerPhotosTVC.m */; };
 		90C3AB23195B287B00E1E321 /* FlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB16195B287B00E1E321 /* FlickerPhotosTVC.m */; };
 		90C3AB24195B287B00E1E321 /* FlickerPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB18195B287B00E1E321 /* FlickerPlacesTVC.m */; };
 		90C3AB25195B287B00E1E321 /* FlickPhotoForPlaceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB1A195B287B00E1E321 /* FlickPhotoForPlaceTVC.m */; };
@@ -19,6 +15,7 @@
 		90C3AB28195B287B00E1E321 /* TopPlaceFlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB20195B287B00E1E321 /* TopPlaceFlickerPhotosTVC.m */; };
 		90C3AB29195B287B00E1E321 /* TopPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB22195B287B00E1E321 /* TopPlaceViewController.m */; };
 		90C3AB2D195B288700E1E321 /* RecentPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C3AB2C195B288700E1E321 /* RecentPhotos.m */; };
+		90C3AB30195B2A3500E1E321 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C3AB2F195B2A3500E1E321 /* AudioToolbox.framework */; };
 		90DB18EB193A30D20038A677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EA193A30D20038A677 /* Foundation.framework */; };
 		90DB18ED193A30D20038A677 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EC193A30D20038A677 /* CoreGraphics.framework */; };
 		90DB18EF193A30D20038A677 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EE193A30D20038A677 /* UIKit.framework */; };
@@ -27,17 +24,13 @@
 		90DB18FB193A30D20038A677 /* TopPlaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB18FA193A30D20038A677 /* TopPlaceAppDelegate.m */; };
 		90DB18FE193A30D20038A677 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DB18FC193A30D20038A677 /* Main_iPhone.storyboard */; };
 		90DB1901193A30D20038A677 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90DB18FF193A30D20038A677 /* Main_iPad.storyboard */; };
-		90DB1904193A30D20038A677 /* TopPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1903193A30D20038A677 /* TopPlaceViewController.m */; };
 		90DB1906193A30D20038A677 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DB1905193A30D20038A677 /* Images.xcassets */; };
 		90DB190D193A30D20038A677 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB190C193A30D20038A677 /* XCTest.framework */; };
 		90DB190E193A30D20038A677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EA193A30D20038A677 /* Foundation.framework */; };
 		90DB190F193A30D20038A677 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DB18EE193A30D20038A677 /* UIKit.framework */; };
 		90DB1917193A30D20038A677 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90DB1915193A30D20038A677 /* InfoPlist.strings */; };
 		90DB1919193A30D20038A677 /* TopPlaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1918193A30D20038A677 /* TopPlaceTests.m */; };
-		90DB1927193A34A30038A677 /* FlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1926193A34A30038A677 /* FlickerPhotosTVC.m */; };
-		90DB192A193A35400038A677 /* TopPlaceFlickerPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1929193A35400038A677 /* TopPlaceFlickerPhotosTVC.m */; };
 		90DB192F193A364B0038A677 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB192E193A364B0038A677 /* FlickrFetcher.m */; };
-		90DB1932193A3EA70038A677 /* FlickerPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB1931193A3EA70038A677 /* FlickerPlacesTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,14 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		909AC642193E90EE00F57809 /* FlickPhotoForPlaceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlickPhotoForPlaceTVC.h; path = ../FlickPhotoForPlaceTVC.h; sourceTree = "<group>"; };
-		909AC643193E90EE00F57809 /* FlickPhotoForPlaceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlickPhotoForPlaceTVC.m; path = ../FlickPhotoForPlaceTVC.m; sourceTree = "<group>"; };
-		909AC64B193EAD2800F57809 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
-		909AC64C193EAD2800F57809 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
-		909D283C194BCD7B008A334D /* RecentPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotos.h; sourceTree = "<group>"; };
-		909D283D194BCD7B008A334D /* RecentPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotos.m; sourceTree = "<group>"; };
-		909D283F194CAC85008A334D /* RecentFlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentFlickerPhotosTVC.h; sourceTree = "<group>"; };
-		909D2840194CAC85008A334D /* RecentFlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentFlickerPhotosTVC.m; sourceTree = "<group>"; };
 		90C3AB15195B287B00E1E321 /* FlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickerPhotosTVC.h; sourceTree = "<group>"; };
 		90C3AB16195B287B00E1E321 /* FlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickerPhotosTVC.m; sourceTree = "<group>"; };
 		90C3AB17195B287B00E1E321 /* FlickerPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickerPlacesTVC.h; sourceTree = "<group>"; };
@@ -75,6 +60,8 @@
 		90C3AB22195B287B00E1E321 /* TopPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlaceViewController.m; sourceTree = "<group>"; };
 		90C3AB2B195B288700E1E321 /* RecentPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotos.h; sourceTree = "<group>"; };
 		90C3AB2C195B288700E1E321 /* RecentPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotos.m; sourceTree = "<group>"; };
+		90C3AB2E195B2A3500E1E321 /* TopPlace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TopPlace.entitlements; sourceTree = "<group>"; };
+		90C3AB2F195B2A3500E1E321 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		90DB18E7193A30D20038A677 /* TopPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DB18EA193A30D20038A677 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90DB18EC193A30D20038A677 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,23 +74,15 @@
 		90DB18FA193A30D20038A677 /* TopPlaceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopPlaceAppDelegate.m; sourceTree = "<group>"; };
 		90DB18FD193A30D20038A677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		90DB1900193A30D20038A677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		90DB1902193A30D20038A677 /* TopPlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopPlaceViewController.h; sourceTree = "<group>"; };
-		90DB1903193A30D20038A677 /* TopPlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopPlaceViewController.m; sourceTree = "<group>"; };
 		90DB1905193A30D20038A677 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90DB190B193A30D20038A677 /* TopPlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopPlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DB190C193A30D20038A677 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		90DB1914193A30D20038A677 /* TopPlaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopPlaceTests-Info.plist"; sourceTree = "<group>"; };
 		90DB1916193A30D20038A677 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		90DB1918193A30D20038A677 /* TopPlaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopPlaceTests.m; sourceTree = "<group>"; };
-		90DB1925193A34A30038A677 /* FlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickerPhotosTVC.h; sourceTree = "<group>"; };
-		90DB1926193A34A30038A677 /* FlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickerPhotosTVC.m; sourceTree = "<group>"; };
-		90DB1928193A35400038A677 /* TopPlaceFlickerPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlaceFlickerPhotosTVC.h; sourceTree = "<group>"; };
-		90DB1929193A35400038A677 /* TopPlaceFlickerPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlaceFlickerPhotosTVC.m; sourceTree = "<group>"; };
 		90DB192C193A364B0038A677 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		90DB192D193A364B0038A677 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		90DB192E193A364B0038A677 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
-		90DB1930193A3EA70038A677 /* FlickerPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickerPlacesTVC.h; sourceTree = "<group>"; };
-		90DB1931193A3EA70038A677 /* FlickerPlacesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickerPlacesTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +93,7 @@
 				90DB18ED193A30D20038A677 /* CoreGraphics.framework in Frameworks */,
 				90DB18EF193A30D20038A677 /* UIKit.framework in Frameworks */,
 				90DB18EB193A30D20038A677 /* Foundation.framework in Frameworks */,
+				90C3AB30195B2A3500E1E321 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +162,7 @@
 		90DB18E9193A30D20038A677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90C3AB2F195B2A3500E1E321 /* AudioToolbox.framework */,
 				90DB18EA193A30D20038A677 /* Foundation.framework */,
 				90DB18EC193A30D20038A677 /* CoreGraphics.framework */,
 				90DB18EE193A30D20038A677 /* UIKit.framework */,
@@ -193,27 +174,12 @@
 		90DB18F0193A30D20038A677 /* TopPlace */ = {
 			isa = PBXGroup;
 			children = (
+				90C3AB2E195B2A3500E1E321 /* TopPlace.entitlements */,
 				90C3AB2A195B288700E1E321 /* Model */,
 				90C3AB14195B287B00E1E321 /* Controller */,
 				90DB192B193A364B0038A677 /* Flickr Fetcher */,
 				90DB18FC193A30D20038A677 /* Main_iPhone.storyboard */,
 				90DB18FF193A30D20038A677 /* Main_iPad.storyboard */,
-				909AC642193E90EE00F57809 /* FlickPhotoForPlaceTVC.h */,
-				909AC643193E90EE00F57809 /* FlickPhotoForPlaceTVC.m */,
-				90DB1928193A35400038A677 /* TopPlaceFlickerPhotosTVC.h */,
-				90DB1929193A35400038A677 /* TopPlaceFlickerPhotosTVC.m */,
-				90DB1930193A3EA70038A677 /* FlickerPlacesTVC.h */,
-				90DB1931193A3EA70038A677 /* FlickerPlacesTVC.m */,
-				90DB1925193A34A30038A677 /* FlickerPhotosTVC.h */,
-				90DB1926193A34A30038A677 /* FlickerPhotosTVC.m */,
-				909D283F194CAC85008A334D /* RecentFlickerPhotosTVC.h */,
-				909D2840194CAC85008A334D /* RecentFlickerPhotosTVC.m */,
-				90DB1902193A30D20038A677 /* TopPlaceViewController.h */,
-				90DB1903193A30D20038A677 /* TopPlaceViewController.m */,
-				909AC64B193EAD2800F57809 /* ImageViewController.h */,
-				909AC64C193EAD2800F57809 /* ImageViewController.m */,
-				909D283C194BCD7B008A334D /* RecentPhotos.h */,
-				909D283D194BCD7B008A334D /* RecentPhotos.m */,
 				90DB1905193A30D20038A677 /* Images.xcassets */,
 				90DB18F1193A30D20038A677 /* Supporting Files */,
 			);
@@ -309,6 +275,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ou;
 				TargetAttributes = {
+					90DB18E6193A30D20038A677 = {
+						DevelopmentTeam = GCHVFP7Z3V;
+					};
 					90DB190A193A30D20038A677 = {
 						TestTargetID = 90DB18E6193A30D20038A677;
 					};
@@ -363,22 +332,14 @@
 				90C3AB2D195B288700E1E321 /* RecentPhotos.m in Sources */,
 				90C3AB26195B287B00E1E321 /* ImageViewController.m in Sources */,
 				90C3AB25195B287B00E1E321 /* FlickPhotoForPlaceTVC.m in Sources */,
-				90DB1932193A3EA70038A677 /* FlickerPlacesTVC.m in Sources */,
-				90DB1904193A30D20038A677 /* TopPlaceViewController.m in Sources */,
 				90DB18FB193A30D20038A677 /* TopPlaceAppDelegate.m in Sources */,
 				90DB18F7193A30D20038A677 /* main.m in Sources */,
 				90C3AB29195B287B00E1E321 /* TopPlaceViewController.m in Sources */,
-				90DB1927193A34A30038A677 /* FlickerPhotosTVC.m in Sources */,
-				909D2841194CAC85008A334D /* RecentFlickerPhotosTVC.m in Sources */,
 				90DB192F193A364B0038A677 /* FlickrFetcher.m in Sources */,
 				90C3AB23195B287B00E1E321 /* FlickerPhotosTVC.m in Sources */,
-				909AC64D193EAD2800F57809 /* ImageViewController.m in Sources */,
-				909D283E194BCD7B008A334D /* RecentPhotos.m in Sources */,
-				909AC644193E90EE00F57809 /* FlickPhotoForPlaceTVC.m in Sources */,
 				90C3AB28195B287B00E1E321 /* TopPlaceFlickerPhotosTVC.m in Sources */,
 				90C3AB24195B287B00E1E321 /* FlickerPlacesTVC.m in Sources */,
 				90C3AB27195B287B00E1E321 /* RecentFlickerPhotosTVC.m in Sources */,
-				90DB192A193A35400038A677 /* TopPlaceFlickerPhotosTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TopPlace/TopPlace.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TopPlace/TopPlace-Prefix.pch";
 				INFOPLIST_FILE = "TopPlace/TopPlace-Info.plist";
@@ -526,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TopPlace/TopPlace.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TopPlace/TopPlace-Prefix.pch";
 				INFOPLIST_FILE = "TopPlace/TopPlace-Info.plist";
