@@ -1,84 +1,61 @@
 //
-//  FlickerPhotosTVC.m
+//  FlickPhotoForPlaceTVC.m
 //  TopPlace
 //
-//  Created by Jianbin Lei on 5/31/14.
+//  Created by Jianbin Lei on 6/3/14.
 //  Copyright (c) 2014 ou. All rights reserved.
 //
 
-#import "FlickerPhotosTVC.h"
+#import "FlickPhotoForPlaceTVC.h"
 #import "FlickrFetcher.h"
 
-@interface FlickerPhotosTVC ()
+@interface FlickPhotoForPlaceTVC ()
 
 @end
 
-@implementation FlickerPhotosTVC
+@implementation FlickPhotoForPlaceTVC
 
-
-
--(void)setPhotos:(NSArray *)photos
-{
-    _photos = photos;
-    [self.tableView reloadData];
-}
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self fetchPhotos];
+    // Do any additional setup after loading the view.
 }
+
+- (void)setPlace:(NSDictionary *)place
+{
+    _place = place;
+    self.title = [self.place valueForKey:@"title"];
+    [self fetchPhotos];
+}
+
+- (void)fetchPhotos
+{
+    NSURL *url = [FlickrFetcher URLforPhotosInPlace:[self.place valueForKeyPath:FLICKR_PLACE_ID] maxResults:50];
+    
+    //muti-thread
+    dispatch_queue_t fetchQ = dispatch_queue_create("flickr photos fetcher", NULL);
+    dispatch_async(fetchQ, ^{
+        NSData *jsonResult = [NSData dataWithContentsOfURL:url];
+        NSDictionary *propertyListResults = [NSJSONSerialization JSONObjectWithData:jsonResult
+                                                                            options:0
+                                                                              error:NULL];
+        //NSLog(@"Flikr Photo Result = %@", propertyListResults);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSArray *photos = [propertyListResults valueForKeyPath:FLICKR_RESULTS_PHOTOS];
+            self.photos = photos;
+        });
+    });
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return [self.photos count];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Flikr Photo Cell" forIndexPath:indexPath];
-    
-    // get the photo out of our Model
-    NSDictionary *photo = self.photos[indexPath.row];
-    
-    // update UILabels in the UITableViewCell
-    // valueForKeyPath: supports "dot notation" to look inside dictionaries at other dictionaries
-    cell.textLabel.text = [photo valueForKeyPath:FLICKR_PHOTO_TITLE];
-    cell.detailTextLabel.text = @"";
-    if ([cell.textLabel.text length] > 0) {
-        cell.detailTextLabel.text = [photo valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
-    } else {
-        cell.textLabel.text = [photo valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
-        if ([cell.textLabel.text length] == 0) {
-            cell.textLabel.text = @"Unknown!!!";
-        }
-    }
-    
-    return cell;
 }
 
 

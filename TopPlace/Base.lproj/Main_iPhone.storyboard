@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="1573" y="-274"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="sbw-ZU-zTF">
             <objects>
-                <viewController id="64u-3F-Ywt" sceneMemberID="viewController">
+                <viewController id="64u-3F-Ywt" customClass="ImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sMa-ol-Ok3"/>
                         <viewControllerLayoutGuide type="bottom" id="0ff-Xo-yEh"/>
@@ -112,35 +112,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0z-0L-CzM">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0z-0L-CzM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="488"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-Z8-8e4">
-                                        <rect key="frame" x="142" y="229" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </activityIndicatorView>
-                                </subviews>
                             </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="i2k-Z8-8e4">
+                                <rect key="frame" x="141" y="222" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x0z-0L-CzM" secondAttribute="trailing" id="7Ub-70-T2l"/>
+                            <constraint firstItem="i2k-Z8-8e4" firstAttribute="leading" secondItem="FaV-Ps-pgO" secondAttribute="leading" constant="141" id="Nro-Yy-U4H"/>
+                            <constraint firstItem="x0z-0L-CzM" firstAttribute="leading" secondItem="FaV-Ps-pgO" secondAttribute="leading" id="Q8P-2S-EBc"/>
+                            <constraint firstItem="i2k-Z8-8e4" firstAttribute="centerY" secondItem="FaV-Ps-pgO" secondAttribute="centerY" id="Wrp-ng-407"/>
+                            <constraint firstAttribute="bottom" secondItem="x0z-0L-CzM" secondAttribute="bottom" constant="-8" id="ogf-TX-NbI"/>
+                            <constraint firstItem="x0z-0L-CzM" firstAttribute="top" secondItem="FaV-Ps-pgO" secondAttribute="top" id="ptZ-mb-nWe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KLC-4L-XFd"/>
+                    <connections>
+                        <outlet property="scrollView" destination="x0z-0L-CzM" id="a11-TR-a3V"/>
+                        <outlet property="spinner" destination="i2k-Z8-8e4" id="PwE-ve-Ftl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGF-Pg-JCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="I3v-mP-EBk">
+                    <connections>
+                        <action selector="zoomTap:" destination="64u-3F-Ywt" id="Lpc-60-Hh1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2190" y="-26"/>
         </scene>
-        <!--Table View Controller - Recent View-->
+        <!--Recent Flicker PhotosTVC - Recent View-->
         <scene sceneID="x9f-hJ-w0x">
             <objects>
-                <tableViewController id="ALh-kJ-vIR" sceneMemberID="viewController">
+                <tableViewController id="ALh-kJ-vIR" customClass="RecentFlickerPhotosTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="Recent View Photo Cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AUJ-P4-9a0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Recent Reivew Cell" textLabel="Pdr-eB-xxa" detailTextLabel="dWX-1r-cEK" style="IBUITableViewCellStyleSubtitle" id="feA-Ts-W3g">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Flikr Photo Cell" textLabel="Pdr-eB-xxa" detailTextLabel="dWX-1r-cEK" style="IBUITableViewCellStyleSubtitle" id="feA-Ts-W3g">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="feA-Ts-W3g" id="ERD-Oi-wbl">
@@ -177,7 +193,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Q2-kY-xtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="335"/>
+            <point key="canvasLocation" x="1168" y="819"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XUb-SN-kT2">
@@ -234,7 +250,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkz-Xm-dbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="335"/>
+            <point key="canvasLocation" x="674" y="819"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -243,6 +259,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vNF-yb-Vmy"/>
+        <segue reference="Zhd-nE-L1n"/>
     </inferredMetricsTieBreakers>
 </document>
